@@ -1,0 +1,523 @@
+<html>
+<head>
+<title>My bio</title>
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Major+Mono+Display|Rajdhani" rel="stylesheet">
+	<style>
+		
+		.nav a { 
+			color: #CCCC99;
+			text-decoration: none;
+			padding: 2vmin 1.3vmax;
+			font-size: 5vmin;
+			
+		}
+		.nav a:hover {
+			background-color: #003366;
+			color: white;
+		}
+		.nav a:active {
+			color: #5A69CF;
+		}
+		.nav {
+			background-color:#EAE9E9;
+			float: right;
+			width: 100vmax;
+   			border-radius: 0px;
+            overflow: hidden;
+			height: 6vmin;
+			text-align: right;
+			font-family: 'Julius Sans One', sans-serif;
+			margin: auto;
+			position: fixed;
+			z-index: 3;
+			border:none;
+			
+		}
+		
+		.content{
+			margin: auto;
+			text-align: center;
+			height:auto;
+			font-family: 'Rajdhani', sans-serif;
+			background-color: #ffffff;
+			display: flex ;
+  			flex-direction: column;
+			align-items: center;
+			padding-top: 2vmin;
+		}
+		
+		img {
+			width : 25vmax;
+			height: 25vmax;
+		}
+		body {
+			background-color: white;
+			margin: auto;	
+		}
+		.footer {
+ 	    width: 100%;
+ 		height: 2.5rem;
+		background-color: #003366;
+		color: #ffffff;
+		font-family: 'Rajdhani', sans-serif;
+		font-size: 20px;
+		border-top: 5px solid white;
+		text-align: center;
+	
+		
+		}
+		.content img {
+			border-radius: 180px;
+			border: 10px solid  #ffffff;
+			width : 25vmax;
+			height: 25vmax;
+			margin-top: 5vmin;
+		}
+		
+		.splash-image {
+ 		 background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+ 		 background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+ 		 background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+ 		 background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+ 		 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pic/3.JPG);
+ 		 height: 108vmin;
+		 background-position: center;
+ 		 background-repeat: no-repeat;
+  		 background-size: cover;
+		 background-attachment: fixed;
+ 		 background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+}
+
+		.splash-text {
+  			text-align: right;
+ 			position: relative;
+			height: 50vmin;
+			width:60vmax;
+			padding: 5vmax;
+ 			left: 50%;
+			top: 50vmin;
+  			transform: translate(-50%, -50%);
+ 			color: white;
+			font-family: 'Rajdhani', sans-serif;
+			font-size: 15vmin;
+		}
+		.splash-text h2 {
+			border: 10px solid #003366;	
+		}
+		.nav h3 {
+			float:left;
+			padding-left: 1vmax;	
+			background-color:CCCC99;
+			height: 8vmin;
+			margin-top:0;
+			font-size: 2vmin;
+			width: 10vmax;
+			color:white;
+			padding-top: 2vmin;
+			padding-right: 0.5vmax;
+		}
+		
+.chat {
+  width: 98vmax;
+  border: solid 0px transparent;
+  display: flex;
+  flex-direction: column;
+  margin-top:2vmin;
+  font-size: 5vmin;
+}
+.messages {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.yours {
+  align-items: flex-start;
+}
+
+.yours .message {
+  margin-right: 25%;
+  background-color: #cccccc;
+  position: relative;
+
+}
+
+.yours .message.last:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -7px;
+  height: 20px;
+  width: 20px;
+  background: #cccccc;
+  border-bottom-right-radius: 15px;
+}
+.yours .message.last:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -10px;
+  width: 10px;
+  height: 20px;
+  background: white;
+  border-bottom-right-radius: 10px;
+}
+
+.mine {
+  align-items: flex-end;
+}
+
+.mine .message {
+  color: white;
+  margin-left: 25%;
+  background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.mine .message.last:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -8px;
+  height: 20px;
+  width: 20px;
+  background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+  background-attachment: fixed;
+  border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -10px;
+  width: 10px;
+  height: 20px;
+  background: white;
+  border-bottom-left-radius: 10px;
+}
+.back a {
+  margin-left: 46vmax;
+  margin-top: 5vmin;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color:black;
+  cursor: pointer; 
+  font-size: 18px;
+  background-color:white;
+  font-family: 'Julius Sans One', sans-serif;
+  text-decoration:none;
+}
+.back a:hover{
+		background-color: #CCCC99;
+		color: white;	
+	}
+
+
+	.content2{
+		height: auto;
+		width: 100vmax;
+		background-color: #EEEEEE;
+		height: 140vmin;
+		margin-top: 3vmin;
+	}
+.content2 span:after{
+		   content:" \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    	   text-decoration:line-through;
+		   color:#003366;
+	}
+	.content2 span:before{
+    		content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    		text-decoration:line-through;
+			color:#003366;
+}
+
+	.content2 h2{
+		text-align:center;
+		font-size: 6vmin;
+		padding-top: 4vmin;	
+		font-family: 'Julius Sans One', sans-serif;
+		color:#003366;
+		font-weight:bold;
+	} 
+	
+	.school1{
+		width: 100vmax;
+		font-family: 'Rajdhani', sans-serif;
+		margin-bottom: 15vmin;
+	}
+	.school2{
+		width: 100max;
+		font-family: 'Rajdhani', sans-serif;
+		margin-bottom: 15vmin;
+	}
+	.school3{
+		width: 100vmax;
+		font-family: 'Rajdhani', sans-serif;
+		margin-bottom: 15vmin;
+	}
+	
+	
+	.schoolpic img{
+		height: 25vmin;
+		width: 16vmax;
+		float: left;
+		margin-top: 8vmin;
+		border-radius: 25px;
+	   -webkit-box-shadow: 38px 25px 52px -12px rgba(128,114,114,1);
+	   -moz-box-shadow: 38px 25px 52px -12px rgba(128,114,114,1);
+	   box-shadow: 38px 25px 52px -12px rgba(128,114,114,1);
+		float:left;
+		clear:left;
+		margin-left: 28vmax;
+
+	}
+	.schooltext{
+		width: 25vmax;
+		margin: auto;
+		margin-left: 5vmax;	
+		margin-top:7vmin;
+		color: #098316;
+		font-weight:800;
+
+		margin-right:10vmax;
+		height:25vmin;
+		display: inline-block;
+		}
+	.schooltext h3{
+		color: #064A8E;	
+		margin-bottom: 0vmin;
+		font-weight: bold;
+		
+	}
+	.schooltext p{
+		color: black;
+		font-weight:300;	
+	}
+
+	
+	.content3{
+		width: 100vmax;
+		height: 90vmin;
+		margin-top: 5vmin;
+		background-color: white;	
+		padding-top: 5vmin;
+	}
+	
+	.logopic{
+		width: 60vmax;
+		margin: auto;
+		padding-left: 10vmax;
+		padding-top: 15vmin;
+	}
+	.logo{
+		width: 20vmax;
+		margin: auto;
+		float:left;
+			
+	}
+	.logo img{
+		
+		height: 20vmin;
+		width: 10vmax;
+		margin-left: auto;	
+	}
+	
+	.content3 h4{
+		color:#cccccc;
+		font-size: 4vmax;
+		font-family: 'Rajdhani', sans-serif;
+		text-align: center;
+		width: 50vmax;
+		margin:auto;	
+	}
+	.content3 a{
+		text-decoration: none;
+		color:#02A2D9;	
+	}
+	
+	
+	
+</style>
+
+</head>
+
+<body>
+     <div class="splash-image">
+     <div id ="top" class ="nav">
+     <h3>JIRAYU JANLERT</h3>
+		<a href ="index.html">Index</a> 
+		<a href ="bio.html">Bio</a>   
+		<a href ="gallery.html">Gallery</a> 
+		<a href ="contact.html">Contact</a>
+	</div>
+ 	<div class="splash-text">
+    	<h2>Get To Know Me.</h2>
+    	</div>
+      </div>
+	
+    
+    
+    <div class = "content">
+  <div class="chat">
+  <div class="mine messages">
+    <div class="message last">
+      Hello, who r u?
+     </div>
+  </div>
+  <div class="yours messages">
+    <div class="message">
+      Hi
+    </div>
+    <div class="message">
+      I'm Jirayu Janlert
+    </div>
+    <div class="message">
+      I'm a third-year college student
+    </div>
+    <div class="message last">
+      at Assumption University, major in BIS
+    </div>
+  </div>
+  <div class="mine messages">
+    <div class="message">
+      Great!
+    </div> 
+    <div class="message last">
+      How about your family?
+     </div>
+     
+  </div>
+  <div class="yours messages">
+    <div class="message">
+      I'm a third child of 'Janlert' family
+    </div>
+    <div class="message">
+      I have two older sisters
+    </div>
+    <div class="message last">
+      I love my family
+    </div>
+    
+	</div>
+    <div class="mine messages">
+    <div class="message">
+      So
+    </div> 
+    <div class="message last">
+      What's ur dream job?
+     </div>
+  
+  
+</div>
+<div class="yours messages">
+    <div class="message">
+      I'm working toward becoming a software developer
+    </div>
+    <div class="message last">
+      I like coding and love to spend time on computer
+    </div>
+</div>
+
+<div class="mine messages">
+    <div class="message">
+      I hope you archieve your dream
+    </div> 
+    <div class="message last">
+      What's ur favorite movie of all time?
+     </div>
+</div>
+<div class="yours messages">
+    <div class="message">
+      "Love, Rosie"
+    </div>
+    <div class="message">
+      It's a story of love with a bad timing
+    </div>
+    <div class="message"><a href="https://www.youtube.com/watch?v=5zL3YJKygd4">https://www.youtube.com/watch?v=5zL3YJKygd4</a></div>
+     <div class= "message last">Here's the trailer</div>
+</div>
+
+<div class="mine messages">
+    <div class="message last">
+      What's your hobby?
+      </div>
+</div>
+
+<div class="yours messages">
+    <div class="message">
+      I like watching movie, reading book, and taking photo
+    </div>
+     <div class= "message last">You can see my photographs in the gallery section</div>
+</div>
+    
+
+    
+	</div>
+    </div>
+   	<div class="content2">
+    <h2><span>My education</span></h2>
+     <div class="school1">
+    <div class="schoolpic"><img src= "pic/16.jpg" ></div>
+   	<div class ="schooltext"> <h3>Interkid Bilingual School</h3><br>From primary school to G.10<br><p>I've studied there for 9 years. IBS offer half courses to be instructed in English while I was in primary school and middle school. In highs chool, all subjects were taught in English. With a good academic result, I always have been called to participate in several academic competition.</p></div> 
+    </div>
+    <div class="school2">
+     <div class="schoolpic"><img src= "pic/17.jpg" ></div>
+   	<div class ="schooltext"> <h3>General Education Diploma</h3><br>US High School Equivalency Diploma<br><p>I've chosen to leave high school to take GED, so I can save time and money. I studied by myself and pass the GED with a good score.</p></div> 
+    </div>
+    <div class="school3">
+    <div class="schoolpic"><img src= "pic/18.jpg" ></div>
+   	<div class ="schooltext"> <h3>Assumption University</h3><br>Currently studying for a Bachelor's degree<br><p>I entered to this university since 2016, and I expected to graduate in 2020. I'm studying business aministration, major in business information system. I got in the list of academic honours in semester 2/2017</p></div>
+    
+    </div>
+    
+    
+    </div>
+    
+    <div class="content3">
+    
+    
+    <h4> "Know more abour me in. . . .<a href ="https://www.facebook.com/Lionian4Jirayu">Facebook</a>, <a href ="https://twitter.com/singto4me">Twitter</a> or <a href ="https://www.instagram.com/a.gonist">Instagram</a></h4>
+    
+    <div class="logopic">
+    <div class="logo">
+    <a href ="https://www.facebook.com/Lionian4Jirayu"><img src="pic/33.jpg"></a>
+    </div>
+    <div class="logo">
+    <a href ="https://twitter.com/singto4me"><img src="pic/31.png"></a>
+    </div>
+      <div class="logo">
+    <a href ="https://www.instagram.com/a.gonist"><img src="pic/32.png"></a>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    <div class="back"><a href= "#top">Back To Top</a></div>
+    <div class ="footer"> 
+    &copy; 2019 Jirayu Janlert - all rights reserved
+    </div>
+</body>
+</html>

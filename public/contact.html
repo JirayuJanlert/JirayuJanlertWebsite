@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>Contact</title>
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Major+Mono+Display|Rajdhani" rel="stylesheet">
+<style>
+		.nav a { 
+			color: #CCCC99;
+			text-decoration: none;
+			padding: 2vmin 1.3vmax;
+			font-size: 5vmin;
+			
+		}
+		.nav a:hover {
+			background-color: #003366;
+			color: white;
+		}
+		.nav a:active {
+			color: #5A69CF;
+		}
+		.nav {
+			background-color: #EEEEEE;
+			float: right;
+			width: 100vmax;
+   			border-radius: 0px;
+            overflow: hidden;
+			height: 6vmin;
+			text-align: right;
+			font-family: 'Julius Sans One', sans-serif;
+		}
+
+			body {
+			margin: auto;	
+		}
+		.footer {
+ 	    width: 100%;
+ 		height: 2.5rem;
+		background-color: #003366;
+		color: white;
+		font-family: 'Rajdhani', sans-serif;
+		font-size: 20px;
+		border-top: 5px solid white;
+		text-align: center;
+	
+		
+		}
+		
+		.nav h3 {
+			float:left;
+			padding-left: 1vmax;	
+			background-color:CCCC99;
+			height: 8vmin;
+			margin-top:0;
+			font-size: 2vmin;
+			width: 10vmax;
+			color:white;
+			padding-top: 2vmin;
+			padding-right: 0.5vmax;
+		}
+		input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #cccccc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #eee;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  height:80vmin;
+  padding-top: 5vmin;
+  width: 100vmax;
+  background-color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 3vmin;
+}
+div.head{
+			clear:both;
+			width: 100vmax;
+			height: 15vmin;
+			margin-bottom:2vmin;
+			border-top: 5px solid white;
+			font-family: 'Julius Sans One', sans-serif;
+			padding-top: 1vmin;
+			font-size: 5vmin;
+			color:white;
+			font-weight:900;
+			background-color:#003366;
+			margin-bottom: 3vmin;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+	<div class ="nav" >
+     <h3>JIRAYU JANLERT</h3>
+	 <a href ="index.html">Index</a> 
+	 <a href ="bio.html">Bio</a>   
+	 <a href ="gallery.html">Gallery</a> 
+	 <a href ="contact.html">Contact</a>
+	</div>
+    <div class="head" >
+	<h2>Contact me</h2>
+    </div>
+	
+
+    <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Thailand">Thailand</option>
+      <option value="China">China</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+	
+	
+	<div class ="footer"> &copy; 2019 Jirayu Janlert - all rights reserved </div>
+	
+</body>
+</html>

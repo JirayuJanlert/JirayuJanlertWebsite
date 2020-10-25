@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>My hobby</title>
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Major+Mono+Display|Rajdhani" rel="stylesheet">
+	<style>
+		.nav a { 
+			color: #CCCC99;
+			text-decoration: none;
+			padding: 2vmin 1.3vmax;
+			font-size: 5vmin;
+			
+		}
+		.nav a:hover {
+			background-color: #003366;
+			color: white;
+		}
+		.nav a:active {
+			color: #5A69CF;
+		}
+		.nav {
+			background-color: #EEEEEE;
+			float: right;
+			width: 100vmax;
+   			border-radius: 0px;
+            overflow: hidden;
+			height: 6vmin;
+			text-align: right;
+			font-family: 'Julius Sans One', sans-serif;
+			margin:auto;
+		}
+		
+		img {
+			width : 20vmax;
+			height: 28vmin;
+			margin-bottom: 2vmin;
+
+		}
+		body {
+			margin: auto;	
+		}
+		.footer {
+ 	    width: 100%;
+ 		height: 2.5rem;
+		background-color: #003366;
+		color: white;
+		font-family: 'Rajdhani', sans-serif;
+		font-size: 20px;
+		border-top: 5px solid white;
+		text-align: center;
+	
+		
+		}
+		.content {
+			width: 100%;
+			margin: 0;
+			background-color: white;	
+			height: 90vmin;;
+		}
+		.column {
+  float: left;
+  width: 20vmax;
+  padding: 32px;
+}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.nav h3 {
+			float:left;
+			padding-left: 1vmax;	
+			background-color:CCCC99;
+			height: 8vmin;
+			margin-top:0;
+			font-size: 2vmin;
+			width: 10vmax;
+			color:white;
+			padding-top: 2vmin;
+			padding-right: 0.5vmax;
+		}
+		
+		div.head{
+			clear:both;
+			width: 100vmax;
+			height: 15vmin;
+			margin-bottom:5vmin;
+			border-top: 5px solid white;
+			font-family: 'Julius Sans One', sans-serif;
+			padding-top: 3vmin;
+			font-size: 5vmin;
+			color:white;
+			font-weight:900;
+			background-color:#003366;
+		}
+		
+	</style>
+    <script>
+    function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+	}
+	</script>
+</head>
+
+<body>
+	<div class ="nav">
+     <h3>JIRAYU JANLERT</h3>
+	 <a href ="index.html">Index</a> 
+	 <a href ="bio.html">Bio</a>   
+	 <a href ="gallery.html">Gallery</a> 
+	 <a href ="contact.html">Contact</a>
+	</div>
+    <div class="head" >
+	<h2>This is my photograph</h2>
+    </div>
+    
+    <div class="content">
+    <div class="row">
+  <div class="column">
+    <img src="pic/20.jpg"  onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/21.jpg" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/25.jpg" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/27.jpg" onclick="myFunction(this);">
+  </div>
+  
+</div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <img id="expandedImg" style="width:100%; height:80%;">
+  <div id="imgtext"></div>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <img src="pic/26.jpg"  onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/30.JPG" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/28.JPG" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="pic/29.JPG" onclick="myFunction(this);">
+  </div>
+</div>
+
+       
+ 
+    </div>
+    
+        <div class ="footer"> &copy; 2019 Jirayu Janlert - all rights reserved </div>
+</body>
+</html>
