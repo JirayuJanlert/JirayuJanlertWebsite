@@ -1,196 +1,131 @@
-<html>
-<head>
-<title>My hobby</title>
-	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Major+Mono+Display|Rajdhani" rel="stylesheet">
-	<style>
-		.nav a { 
-			color: #CCCC99;
-			text-decoration: none;
-			padding: 2vmin 1.3vmax;
-			font-size: 5vmin;
-			
-		}
-		.nav a:hover {
-			background-color: #003366;
-			color: white;
-		}
-		.nav a:active {
-			color: #5A69CF;
-		}
-		.nav {
-			background-color: #EEEEEE;
-			float: right;
-			width: 100vmax;
-   			border-radius: 0px;
-            overflow: hidden;
-			height: 6vmin;
-			text-align: right;
-			font-family: 'Julius Sans One', sans-serif;
-			margin:auto;
-		}
-		
-		img {
-			width : 20vmax;
-			height: 28vmin;
-			margin-bottom: 2vmin;
+<html lang="en">
 
-		}
-		body {
-			margin: auto;	
-		}
-		.footer {
- 	    width: 100%;
- 		height: 2.5rem;
-		background-color: #003366;
-		color: white;
-		font-family: 'Rajdhani', sans-serif;
-		font-size: 20px;
-		border-top: 5px solid white;
-		text-align: center;
-	
-		
-		}
-		.content {
-			width: 100%;
-			margin: 0;
-			background-color: white;	
-			height: 90vmin;;
-		}
-		.column {
-  float: left;
-  width: 20vmax;
-  padding: 32px;
-}
+  <head>
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Major+Mono+Display|Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script> -->
+  </head>
 
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
-}
+  <body>
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar  row py-0 mx-0 mb-5 px-0 fixed-top navbar-expand-sm navbar" id="bgcolor">
+      
+          <h3 class="navbar-brand  py-4 my-0 mx-0" href="#">JIRAYU JANLERT</h3>
+          <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+          </button>
+      
+      
+          <div class="collapse  navbar-collapse ml-auto" id="collapsibleNavId">
+            <ul class="navbar-nav nav ml-auto  mt-lg-0   ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="bio.html">Bio</a>
+      
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+      
+          </div>
+        </nav>
+      
 
-.column img:hover {
-  opacity: 1;
-}
+        <div class="head mt-5 jumbotron-fluid  row">
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-.container {
-  position: relative;
-  display: none;
-}
+    <h2 class=" h1 py-5 ">This is my photograph</h2>
 
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
+     
+        </div>
+</div>
+    </header>
 
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-.nav h3 {
-			float:left;
-			padding-left: 1vmax;	
-			background-color:CCCC99;
-			height: 8vmin;
-			margin-top:0;
-			font-size: 2vmin;
-			width: 10vmax;
-			color:white;
-			padding-top: 2vmin;
-			padding-right: 0.5vmax;
-		}
-		
-		div.head{
-			clear:both;
-			width: 100vmax;
-			height: 15vmin;
-			margin-bottom:5vmin;
-			border-top: 5px solid white;
-			font-family: 'Julius Sans One', sans-serif;
-			padding-top: 3vmin;
-			font-size: 5vmin;
-			color:white;
-			font-weight:900;
-			background-color:#003366;
-		}
-		
-	</style>
-    <script>
-    function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  expandImg.parentElement.style.display = "block";
-	}
-	</script>
-</head>
-
-<body>
-	<div class ="nav">
-     <h3>JIRAYU JANLERT</h3>
-	 <a href ="index.html">Index</a> 
-	 <a href ="bio.html">Bio</a>   
-	 <a href ="gallery.html">Gallery</a> 
-	 <a href ="contact.html">Contact</a>
-	</div>
-    <div class="head" >
-	<h2>This is my photograph</h2>
-    </div>
     
-    <div class="content">
-    <div class="row">
-  <div class="column">
-    <img src="pic/20.jpg"  onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="pic/21.jpg" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="pic/25.jpg" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="pic/27.jpg" onclick="myFunction(this);">
-  </div>
+
+   <main >
+      <div class="content-gallery container-fluid mt-5 pt-5 mb-5">
+        <div class="row justify-content-center text-center">
+      
+          <div class="column col-lg-3 col-6">
+            <img src="pic/20.jpg" onclick="myFunction(this);">
+          </div>
+          <div class="column col-lg-3 col-6">
+            <img src="pic/21.jpg" onclick="myFunction(this);">
+          </div>
+          <div class="column col-lg-3 col-6">
+            <img src="pic/25.jpg" onclick="myFunction(this);">
+          </div>
+          <div class="column col-lg-3 col-6">
+            <img src="pic/27.jpg" onclick="myFunction(this);">
+          </div>
+      
+        </div>
+        <!-- <div class="container-gallery row">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+              <img id="expandedImg" style="width:100%; height:80%;">
+              <div id="imgtext"></div>
+            </div> -->
+      
+      
+        <div class="row text-center">
+          <div class="column col-lg-3 col-6">
+            <img src="pic/26.jpg" onclick="myFunction(this);">
+          </div>
+          <div class="column col-lg-3 col-6">
+            <img src="pic/30.JPG" onclick="myFunction(this);">
+          </div>
+          <div class="column col-lg-3 col-6">
+            <img src="pic/28.JPG" onclick="myFunction(this);">
+          </div>
+          <div class="column col-lg-3 col-6">
+            <img src="pic/29.JPG" onclick="myFunction(this);">
+          </div>
+        </div>
+      
+      
+      
+      </div>
+   </main>
+
+   <footer>
+  <div class="footer footer-copyright mt-5"> &copy; 2020 Jirayu Janlert - all rights reserved </div>
+   </footer>
   
-</div>
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-  <img id="expandedImg" style="width:100%; height:80%;">
-  <div id="imgtext"></div>
-</div>
 
 
-<div class="row">
-  <div class="column">
-    <img src="pic/26.jpg"  onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="pic/30.JPG" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="pic/28.JPG" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="pic/29.JPG" onclick="myFunction(this);">
-  </div>
-</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
 
-       
- 
-    </div>
-    
-        <div class ="footer"> &copy; 2019 Jirayu Janlert - all rights reserved </div>
-</body>
 </html>
